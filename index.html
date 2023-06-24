@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Rock & EDM Festival</h1>
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#entradas">Entradas</a>  
+            </nav>
+        </div>
+    </header>
+    <div class="video">
+         <div class="contenido-video">
+              <div class="texto-video contenedor">
+                <h2>Rock & EDM Festival</h2>
+                <p>Julio 2022, Madrid, España.</p>
+              </div>
+         </div>
+         <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">   
+        </video>
+    </div>
+
+    <section class="sobre-festival contenedor">
+        <div class="imagen">
+            <picture>
+                 <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+                 <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                 <img loading="lazy" src="build/img/imagen_vocalista.jpg" alt="imagen-vocalista">
+            </picture>
+        </div>
+        <div class="contenido-festival">
+             <h2>Rock & EDM Festival</h2>
+             <p class="fecha">Julio 2022, Madrid, España.</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nam rem nobis, totam dolor, eius expedita aperiam odit facilis consequuntur ad iste doloribus itaque laudantium iusto delectus quam ab tempora!</p>
+        </div>
+    </section>
+    
+    <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
+
+        <p>Viernes 15</p>
+        <div class="actuaciones-viernes contenedor">    
+            <div class="contenido-rock">
+                <h4>Escenario Rock</h4>
+                <i class='bx bxs-guitar-amp'></i>
+                <ul class="bandas rock">
+                    <li>12:00 | <span>Metallica</span></li>
+                    <li>14:00 | <span>Breaking Benjamin</span></li>
+                    <li>16:00 | <span>3 Doors Down</span></li>
+                    <li>18:00 | <span>Alter Bridge</span></li>
+                    <li>20:00 | <span>Creed</span> </li>
+                    <li>22:00 | <span>Pearl Jam</span></li>
+                </ul>
+            </div>
+            <div class="contenido-edm">
+                <h4>Escenario EDM</h4>
+                <i class='bx bx-headphone'></i>
+                <ul class="bandas edm">
+                    <li>12:00 | <span>Paul Van Dick</span></li>
+                    <li>14:00 | <span>Ferry Corsten</span></li>
+                    <li>16:00 | <span>Armin Vaan Buren</span></li>
+                    <li>18:00 | <span>Carl Cox</span></li>
+                    <li>20:00 | <span>Wally López</span></li>
+                    <li>22:00 | <span>Eric Prydz</span></li>
+                </ul>
+           </div>   
+        </div>
+
+        <p>Sabado 16</p>
+        <div class="actuaciones-sabado contenedor">    
+            <div class="contenido-edm">
+                <h4>Escenario EDM</h4>
+                <i class='bx bx-headphone'></i>
+                <ul class="bandas edm">
+                    <li>12:00 | <span>Paul Van Dick</span></li>
+                    <li>14:00 | <span>Ferry Corsten</span></li>
+                    <li>16:00 | <span>Armin Vaan Buren</span></li>
+                    <li>18:00 | <span>Carl Cox</span></li>
+                    <li>20:00 | <span>Wally López</span></li>
+                    <li>22:00 | <span>Eric Prydz</span></li>
+                </ul>
+           </div>
+           <div class="contenido-rock">
+            <h4>Escenario Rock</h4>
+            <i class='bx bxs-guitar-amp'></i>
+            <ul class="bandas rock">
+                <li>12:00 | <span>Metallica</span></li>
+                <li>14:00 | <span>Breaking Benjamin</span></li>
+                <li>16:00 | <span>3 Doors Down</span></li>
+                <li>18:00 | <span>Alter Bridge</span></li>
+                <li>20:00 | <span>Creed</span> </li>
+                <li>22:00 | <span>Pearl Jam</span></li>
+            </ul>
+        </div> 
+        </div>
+   
+    </section>
+      
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galeria</h3>
+        <ul id="galeria-imagenes">
+
+        </ul>
+    </section>
+
+    <section id="entradas" class="entradas">
+        <h3>Entradas</h3>
+        <div class="entradas-grid contenedor">
+            <div class="un-dia">
+                <p class="dias">Pase 1 Día</p>
+                <div class="contenido un-dia">
+                     <p class="titulo">Incluye</p>
+                     <ul class="incluye">
+                         <li>Acceso a ambos escenarios</li>
+                         <li>Comida y Bebida</li>
+                     </ul>
+                     <p class="precio">100€</p>
+                </div>
+           </div>
+           <div class="dos-dias">
+                <p class="dias">Pase 2 Días</p>
+                <div class="contenido dos-dias">
+                     <p class="titulo">Incluye</p>
+                     <ul class="incluye">
+                         <li>Acceso a ambos escenarios</li>
+                         <li>Comida y Bebida</li>
+                         <li>Camiseta del Evento</li>
+                         <li>Acceso Vip</li>
+                     </ul>
+                     <p class="precio">180€</p>
+                </div>
+           </div>
+        </div>
+        
+    </section>
+
+    <footer class="footer">
+        <p class="footer-registrado">Rock & EDM Festival. Todos los derechos reservados</p>
+    </footer>
+    
+    <script src="build/js/app.js"></script>
+</body>
+</html>
