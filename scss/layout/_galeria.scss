@@ -1,0 +1,70 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.galeria{
+   
+  padding: v.$separacion;
+   
+   h3{
+      text-align: center;
+      padding-bottom: 2rem;
+   }
+   ul{
+      @include m.listas;
+   }
+}
+
+
+#galeria-imagenes{
+
+  @include m.grid(1,3rem);
+
+  @include m.phone{
+     @include m.grid(2,3rem)
+  }
+
+  @include m.tablet{
+     @include m.grid(4,3rem)
+  }
+  @include m.desktop{
+     @include m.grid(6,3rem)
+  }
+    
+}
+.overlay{
+   @include m.phone{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      background-color: rgba(0,0,0,.8);
+
+   }
+  picture{
+     position: relative;
+     @include m.phone{
+      display: block;
+      max-width: 40rem;
+     }
+     @include m.tablet{
+      max-width: 60rem;
+     }
+     
+  }
+  .closeIcon{
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     background-color: transparent;
+     border: none;
+     font-size: 2rem;
+     color: v.$blanco;
+     padding: .2rem;
+     cursor: pointer;
+  }
+}

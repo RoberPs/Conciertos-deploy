@@ -1,0 +1,97 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.lineup{
+  background-color:v.$rosa;
+  padding: v.$separacion;
+  h3{
+     text-align: center;
+    
+  }
+  p{
+    text-align: center;
+    color: v.$blanco;
+  }
+}
+
+.actuaciones-viernes,
+.actuaciones-sabado{
+    
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+   
+   @include m.tablet{
+     @include m.grid(2,3rem){
+       margin: 0 auto;
+     }
+     
+   }
+   
+   ul{
+     @include m.listas;
+   }
+   li{
+     padding: 1.5rem 0 1.5rem 1rem;
+     font-weight: bold;
+     font-size: 1.4rem;
+     @include m.tablet{
+      font-size: 1.6rem;
+    }
+
+     span{
+      font-weight: normal;
+    }
+   }
+}
+
+.contenido-rock,
+.contenido-edm{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+   border-radius: .5rem;
+   width: 100%;
+   margin: 0 auto;
+   
+   h4{
+     text-align: center;
+     font-size: 1.6rem;
+     @include m.tablet{
+        font-size: 1.8rem;
+    }
+   }
+   i{
+     font-size: 2.5rem;
+     display: block;
+     margin: 0 auto 2rem auto;
+   }
+}
+
+.contenido-rock{
+  background-color: v.$amarillo;
+  
+  li{
+    &:nth-child(odd){
+      background-color: v.$amarilloFuerte;
+  
+     }
+  }
+
+
+}
+
+.contenido-edm{
+  background-color: v.$verde;
+
+  li{
+    &:nth-child(odd){
+      background-color: v.$verdeOscuro;
+  
+     }
+  }
+
+}

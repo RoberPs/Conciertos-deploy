@@ -1,0 +1,63 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.entradas{
+   background-color: v.$verde;
+   padding: v.$separacion;
+   h3{
+     text-align: center;
+     color: v.$blanco;
+     
+   }
+   ul{
+      @include m.listas;  
+   }
+   li{
+     background-color: v.$blanco;
+     border-bottom: 1px solid v.$gris;
+     padding: .7rem 0rem;
+     @include m.tablet{
+        text-align: start;
+        padding-left: 1rem; 
+    }
+   }
+
+   .entradas-grid{
+      @include m.grid(1,5rem);
+
+      @include m.tablet{
+         @include m.grid(2,5rem){
+          
+        }
+      }
+   }
+}
+
+.un-dia,
+.dos-dias{
+  text-align: center;
+  .dias{
+      color: v.$blanco;
+      font-size: 2.8rem;
+      
+  }
+  .contenido{
+
+     .titulo{
+        text-transform: uppercase;
+        color: v.$blanco;
+        background-color: v.$rosa;
+        padding: .8rem 0;
+        margin: 0;
+     }
+     .precio{
+        color: v.$blanco;
+        background-color: v.$morado;
+        margin: 0;
+        padding:.6rem 0;
+        font-size: 2.5rem;
+      }
+  }
+}
+
